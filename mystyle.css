@@ -1,0 +1,104 @@
+/* Below is my CSS code that I use to style my index.html file */
+
+h2 {
+    background-color: lightgray;
+    color:hsl(50, 50, 50);
+    display: flow-root;
+}
+
+h2:hover {
+    font-size: 1.8em;
+}
+
+button:active {
+    box-shadow: 2px 0.2in 2ex;
+}
+
+#media {
+    color:darkmagenta;
+    text-decoration:underline;
+    text-align:left
+}
+
+a[datalist]{
+    display:inline-block;
+}
+
+a[href="mailto:nrao@ucsd.edu"]{
+    height:7cm;
+    width: 9ln;
+    min-width:2vh;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+
+    * {
+        position: static;
+        border-style:dashed;
+        border-color:black;
+        border-width:0.1mm;
+        border-radius:0.1mm;
+        margin:auto;
+    }
+
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main > ol {
+    border-color:blue;
+    border-width: 0.3mm;
+    margin: 10px 80px 10px 10px;
+    padding: 20px 0px 20px 10px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.flexbox {
+    width:200px;
+    margin:10px;
+    border: 3px solid black;
+    background-color: yellowgreen;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-shrink: 3;
+    align-self: auto;
+}
+
+.issues p {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-column-start: 2;
+    grid-column-end: five;
+}
+label ~ label {
+    color: darkslategrey;
+}
+
+label + label {
+    border: 2px;
+}
+
+footer.flexbox {
+    border-color: blueviolet;
+}
+
+h1, h3 {
+    background-color: lightgray;
+}

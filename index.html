@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+        body {
+            background-color: transparent;
+        }
+    </style>
+
     <title>CSE 110 Assignment 2</title>
 
     <meta name="description" content="CSE 110 Meeting Minutes Assignment">
 
     <link rel="icon" type="image/png" href="apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mystyle.css">
   </head>
   <body>
 
-    <h1>Meeting Minutes (10/9)</h1>
+    <h1 style="color:slateblue;">Meeting Minutes (10/9)</h1>
 
         <header>
             <h2>What was discussed:</h2>
@@ -27,13 +39,13 @@
 
     <main>
 
-        <h3>
-                    To do list
+        <h3 style="color:#ff4747;">
+            To do list
         </h3>
-        <ol>
-            <li> <b>Person A</b> does part a </li>
-            <li> <b>Person B</b> does part b </li>
-            <li> <b>Person C</b> does part c </li>
+        <ol class="flexbox-container">
+            <li class="flexbox"> <b>Person A</b> does part a </li>
+            <li class="flexbox"> <b>Person B</b> does part b </li>
+            <li class="flexbox"> <b>Person C</b> does part c </li>
         </ol>
 
     </main>
@@ -41,7 +53,7 @@
     <hr>
 
     <section>
-        <h2>Links</h2>
+        <h2 style="color:rgb(74, 153, 38)">Links</h2>
         <nav>
             <ul>
                 <li><a href="screenshots/example.png">Screenshot</a></li>
@@ -52,7 +64,7 @@
 
     <section>
         <details>
-            <summary>Media</summary>
+            <summary id="media">Media</summary>
             <p>Below is a selection of small media used to practice how HTML works.</p>
           </details>
 
@@ -69,7 +81,14 @@
     </section>
 
     <!-- div and span (not useful without CSS) -->
-    <div class="main-container"></div>
+    <div class="issues">
+        <h2>Issues facing the team</h2>
+        <p>
+            Person A is having trouble getting their part of the project completed due to a bug in the code.
+        </p>
+        <p>Person B has a conflict with Person C.</p>
+        <p>Person D has a busy schedule and personal issues, so they cannot contribute as much as they would like for now. Person E will cover for them in the meanwhile.</p>
+    </div>
     <span></span>
 
 
